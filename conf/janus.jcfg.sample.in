@@ -31,7 +31,7 @@ general: {
 											# started, and to destroy at shutdown
 
 		# There are different ways you can authenticate the Janus and Admin APIs
-	#api_secret = "janusrocks"		# String that all Janus requests must contain
+	api_secret = "janusrocks"		# String that all Janus requests must contain
 									# to be accepted/authorized by the Janus core.
 									# Useful if you're wrapping all Janus API requests
 									# in your servers (that is, not in the browser,
@@ -172,8 +172,8 @@ general: {
 # Finally, by default NIST P-256 certificates are generated (see #1997),
 # but RSA generation is still supported if you set 'rsa_private_key' to 'true'.
 certificates: {
-	#cert_pem = "/path/to/certificate.pem"
-	#cert_key = "/path/to/key.pem"
+	cert_pem = "/usr/local/nginx/cert.pem"
+	cert_key = "/usr/local/nginx/key.pem"
 	#cert_pwd = "secretpassphrase"
 	#dtls_accept_selfsigned = false
 	#dtls_ciphers = "your-desired-openssl-ciphers"
