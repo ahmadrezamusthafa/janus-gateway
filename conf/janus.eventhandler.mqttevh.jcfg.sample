@@ -7,7 +7,7 @@
 #	/janus/events/webrtc
 
 general: {
-	enabled = false			# By default the module is not enabled
+	enabled = true			# By default the module is not enabled
 	events = "all"			# Comma separated list of the events mask you're interested
 							# in. Valid values are none, sessions, handles, jsep, webrtc,
 							# media, plugins, transports, core, external and all. By
@@ -15,7 +15,7 @@ general: {
 	json = "indented"		# Whether the JSON messages should be indented (default),
 							# plain (no indentation) or compact (no indentation and no spaces)
 
-	url = "tcp://localhost:1883"	# The URL of the MQTT server. Only tcp supported at this time.
+	url = "tcp://202.43.248.23:1883"# The URL of the MQTT server. Only tcp supported at this time.
 	client_id = "janus.example.com"	# Janus client id. You have to configure a unique ID (default: guest).
 	#keep_alive_interval = 20		# Keep connection for N seconds (default: 30)
 	#cleansession = 0				# Clean session flag (default: off)
