@@ -1,11 +1,11 @@
 # Configuration of the MQTT additional transport for the Janus API.
 general: {
-	enabled = true						# Whether the support must be enabled
+	enabled = false						# Whether the support must be enabled
 	#events = true						# Whether to notify event handlers about transport events (default=true)
 	json = "indented"						# Whether the JSON messages should be indented (default),
 										# plain (no indentation) or compact (no indentation and no spaces)
 
-	url = "tcp://202.43.248.23:1883"	# The connection URL of the MQTT broker: if you want
+	url = "tcp://localhost:1883"	    # The connection URL of the MQTT broker: if you want
 										# to use SSL, make sure you type ssl:// instead of tcp://,
 										# and that you configure the SSL settings below
 	#mqtt_version = "3.1.1"				# Protocol version. Available values: 3.1, 3.1.1 (default), 5.
